@@ -12,8 +12,6 @@ shinyServer(function(input, output, session) {
   output$date_range <- renderPrint(input$daterange1)
   output$date_range_itr <- renderPrint(input$daterange_itr)
   
-  #browser()
-  
   # info table
   output$table <- renderDataTable({
     df_info_companies <- GetDFPData2::get_info_companies(cache_folder = my_app_cache_folder)
@@ -326,7 +324,6 @@ shinyServer(function(input, output, session) {
       #                                 default = "notification")
       # )
       
-      browser()
       l_dfp <- GetDFPData2::get_dfp_data(companies_cvm_codes = my_cvm_codes, 
                                          first_year =  lubridate::year(as.Date(first_date)),
                                          last_year = lubridate::year(as.Date(last_date)), 
