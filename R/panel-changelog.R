@@ -13,10 +13,11 @@ make_panel_changelog <- function(size_pages) {
                             p('2020-04-17 - Update on cache file: new dfp and fre data from 2019'),
                             p('2021-03-07 - New and improved GetDFPData2 interface. Now with REAL data feed. ',
                               'See this', a('blog post', href="")),
+                            p('2021-05-07 - Improved UI and cleaned code'),
                             br(),
                             h4('Next steps'),
-                            p('* implement ITR data -- NOT implemented (still testing for bugs)'),
-                            p('* implement FRE data -- NOT implemente (server cant handle a live query)')
+                            p('* implement ITR data -- NOT implemented (fuction is not working as expected..)'),
+                            p('* implement FRE data -- NOT implemente (server cant handle multiple live queries..)')
            )
            )
   )
