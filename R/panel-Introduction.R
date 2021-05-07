@@ -32,6 +32,8 @@ make_panel_introduction <- function(size_pages) {
                                 'to an Excel, csv or rds file.')
                        ) 
                      ),
+                     fluidRow(column(size_panels*2,
+                              hr()) ),
                      fluidRow(
                        column(size_panels,
                               h3('Access to Compiled Datasets'),
@@ -50,6 +52,8 @@ make_panel_introduction <- function(size_pages) {
                                 'All supporters will be featured anonymously in the Supporters tab.'),
                               HTML(paste0(readLines('html_components/paypal.html'), collapse = '\n'))
                        )),
+                     fluidRow(column(size_panels*2,
+                                     hr()) ),
                      fluidRow(
                        column(size_panels,
                               h3('Bug reports'),
@@ -64,6 +68,8 @@ make_panel_introduction <- function(size_pages) {
                               p('Perlin, M. S., Kirch, G., & Vancin, D. (2019). Accessing financial reports and corporate events with GetDFPData. Revista Brasileira de Finanças, 17(3).')
                        )
                      ),
+                     fluidRow(column(size_panels*2,
+                                     hr()) ),
                      fluidRow(
                        column(size_panels,
                               img(src='logo_ufrgs.png', align = "left", width="100", height="100")
