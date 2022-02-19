@@ -14,7 +14,7 @@ make_panel_dl_dfp <- function(size_pages, available_companies) {
                       selectInput('user_companies', label = 'Select available companies', 
                                   choices = c('All Companies', 
                                               available_companies), multiple=TRUE, selectize=TRUE, 
-                                  selected = available_companies[1], width = '100%'),
+                                  selected = 'All Companies', width = '100%'),
                       textOutput('user_companies'))),
              br(),
              fluidRow(column(size_pages,
